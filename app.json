@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e9726a6b-023f-45cb-846f-b631eaf483cc"
+      }
+    },
+    "owner": "spinthere"
   }
 }
