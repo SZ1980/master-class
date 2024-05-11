@@ -1,15 +1,15 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, View } from "react-native";
-
-import FeedPost from "./src/components/FeedPost";
+import { StyleSheet } from "react-native";
+import Navigator from "./src/navigation";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <FeedPost />
+    <SafeAreaProvider style={styles.container}>
+      <Navigator />
 
       <StatusBar style="auto" />
-    </View>
+    </SafeAreaProvider>
   );
 }
 
@@ -17,7 +17,5 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#c9c9c9",
-    alignItems: "center",
-    justifyContent: "center",
   },
 });
